@@ -13,7 +13,7 @@ namespace Modul02
 			int sum = 0;
 
 			//Събиране на числа
-			a = 55;
+			a = 10;
 			b = 10;
 
 			sum = a + b;
@@ -25,6 +25,21 @@ namespace Modul02
 			Console.Write ('=');
 		
 			Console.WriteLine ( sum );
+			//Допълнителни оператори
+			Console.WriteLine ("\nIzpolzwane na +=");
+				a+=b;
+				Console.WriteLine (a);
+			Console.WriteLine ("\nIzpolzwane na -=");
+			a-=b;
+			Console.WriteLine (a);
+			Console.WriteLine ("\nIzpolzwane na *=");
+			a*=b;
+			Console.WriteLine (a);
+			Console.WriteLine ("\nIzpolzwane na ++");
+			a++;
+			Console.WriteLine (a);
+			Console.WriteLine ("Standartno delene "+(7/3).ToString());
+			Console.WriteLine ("Delene ostatyk "+(7%3).ToString());
 			Console.ReadKey ();
 		} 
 	}
