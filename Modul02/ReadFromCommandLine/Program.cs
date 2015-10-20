@@ -13,7 +13,15 @@ namespace ReadFromCommandLine
 			b = Convert.ToInt32 (Console.ReadLine ());
 			// Pechat na rezultat
 			Console.WriteLine ("a+b="+(a+b).ToString()+"\n\n\n");
-
+			string test = "1";
+			test += ", 2";
+			test += ", 100";
+			test += ", 4";
+			test += ", 5";
+			Console.WriteLine ("Sum +=  " + test + "\n");
+			test = test.Replace (", ", ";");
+			Console.WriteLine ("Replace : " + test + "\n");
+			Console.WriteLine ("Split -3: " + test.Split (';')[2]);
 		}
 	}
 }
