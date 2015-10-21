@@ -6,16 +6,19 @@ namespace TableProject
 	{
 		public static void Main (string[] args)
 		{
-			String [] row = new string [3];
-			row [0]="Peд 1";
-			row [1]="Peд 2";
-			row [2]="Peд 3";
-			Console.WriteLine ( "Масивът row :"+row [0]+", "+row [1]+", "+row [2]+"\n");
-			String[] parse= "1,2,3,4,5,6,7,8,9".Split (',');
+			// Дефиниране на таблица
+			String [,] table = new string [2,3];
+			// Въвеждане на 1-ви ред
+			table [0,0]="Теодора";table [0,1]="Христова";table [0,2]="47";
 
-			Console.WriteLine ("Броят на елементите на масива: \n" + "1,2,3,4,5,6,7,8,9\n\ne: " + parse.Length);
-			String list1=string.Join (";", parse);
-			Console.WriteLine ( "Новият стринг e :\n"+list1+"\n\n");
+			// Въвеждане на 2-ri ред
+			table [1,0]="Христо";table [1,1]="Тодоров";table [1,2]="74";
+			//Печат
+			Console.WriteLine ("Кой ред искате да видите?  ");
+			int  _index= Convert.ToInt32 (Console.ReadLine ());
+			Console.WriteLine ((table[_index-1,0])[0]+". "+table[_index-1,1]+"  "+table[_index-1,2]+"г.");
+
 		}
 	}
 }
+    
