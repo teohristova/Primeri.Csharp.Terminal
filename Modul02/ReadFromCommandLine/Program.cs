@@ -20,7 +20,7 @@ namespace ReadFromCommandLine
 			test += ", 5";
 			Console.WriteLine ("Sum +=  " + test + "\n");
 			test = test.Replace (", ", ";");
-			Console.WriteLine ("Replace : " + test + "\n");
+			Console.WriteLine ("подмяна: " + test + "\n");
 			Console.WriteLine ("Split -3: " + test.Split (';')[2]);
 		}
 	}
