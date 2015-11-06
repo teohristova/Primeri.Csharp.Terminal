@@ -7,28 +7,35 @@ namespace BoolExplore
 		public static void Main (string[] args)
 		{
 			int [] _i = new int[] { 4, 3, 2 };
-			int _iu = Convert.ToInt32 (Console.ReadLine ( ));
-//			bool _chek01 = (_iu <= _i.Length);
-//			bool _chek02 = (_iu >0);
-//			bool _exp01 = _chek01 && _chek02; // Логическо и ; "&&''
-//			bool _exp02 = _chek01 || _chek02; // Логическо и ; "||''
-//			bool _exp03 = !_chek01 ; // Логическо отрицание ; "!''
-//			
-//			Console.WriteLine ("/nЛогическо И :   " + _exp01.ToString());
-//			Console.WriteLine ("/nЛогическо ИЛИ :  " + _exp02.ToString());
-//			Console.WriteLine ("/nОтрицание на " +  _chek01.ToString() + ":"+ _exp03.ToString());
-//			Console.ReadKey ();
+			int _iu = 0;
+			string _input = "0";
+			Console.WriteLine ( "\nВъведете индекс :  ");
+				_input = Console.ReadLine ();
 
-			if (_iu > 0 && _iu <= _i.Length) { 
-				Console.WriteLine (_i [_iu - 1]);
-			} else {
-				if (_iu >= _i.Length) {
-					Console.WriteLine ("Индексът е прекалено голям");
+			bool _check01=int.TryParse (_input, out _iu);
+			bool _check02 = (_iu <= _i.Length);
+			bool _check03 = (_iu >0);
+
+				if (_check01 && _check02  && _check03) 
+				{ 
+					Console.WriteLine ( _i[_iu-1]);
+				}  
+
+				if (! _check01) 
+				{ 
+					Console.WriteLine ("\n\n\nИндексът трябва да е число");
+			}  
+
+				if  (! _check02)  {
+					Console.WriteLine ("\n\n\nИндексът е прекалено голям");
 				}
-				if (_iu <0) {
-					Console.WriteLine ("Индексът е прекалено малък");
+			
+				if (! _check03 && _check01 ) {
+					Console.WriteLine ("\n\n\nИндексът е прекалено малък");
 				}
-			}
+		
+
+		
 			Console.ReadKey ();
 	
 	}
