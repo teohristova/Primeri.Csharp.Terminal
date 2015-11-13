@@ -1,0 +1,8 @@
+C:\Users\TEDY\Documents\Projects\Modul04\Modul04\bin\Debug\Modul04.exe
+C:\Users\TEDY\Documents\Projects\Modul04\Modul04\bin\Debug\Modul04.pdb
+C:\Users\TEDY\Documents\Projects\Modul04\Modul04\obj\x86\Debug\Modul04.exe
+C:\Users\TEDY\Documents\Projects\Modul04\Modul04\obj\x86\Debug\Modul04.pdb
+G:\aula\primeri.csharp.terminal\Modul04\Modul04\bin\Debug\Modul04.exe
+G:\aula\primeri.csharp.terminal\Modul04\Modul04\bin\Debug\Modul04.pdb
+G:\aula\primeri.csharp.terminal\Modul04\Modul04\obj\x86\Debug\Modul04.exe
+G:\aula\primeri.csharp.terminal\Modul04\Modul04\obj\x86\Debug\Modul04.pdb
